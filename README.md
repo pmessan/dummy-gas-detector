@@ -18,10 +18,10 @@ catkin_make && source devel/setup.bash # assuming you use bash
 Bonus: It is worth adding the following snippet to your shell configuration file (~/.bashrc or ~/.zshrc). Feel free to adjust the paths as per your case.
 ```bash
 # for bash users
-alias cm="cd ~/ros_ws && catkin_make && source devel/setup.bash"
+echo "alias cm=\"cd ~/ros_ws && catkin_make && source devel/setup.bash\"" >> ~/.bashrc
 
 # for zsh users (like me :D)
-alias cm="cd ~/ros_ws && catkin_make && source devel/setup.zsh"
+echo "alias cm=\"cd ~/ros_ws && catkin_make && source devel/setup.zsh\"" >> ~/.zshrc
 ```
 Now, you just `cm` wherever you are to build your ROS workspace! ;)
 
