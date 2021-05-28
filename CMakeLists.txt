@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(dummyGasDetector)
+project(dummy_gas_detector)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -103,10 +103,10 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
- INCLUDE_DIRS include
- LIBRARIES my_ros_package
+# INCLUDE_DIRS include
+ LIBRARIES dummy_gas_detector
  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
-#  DEPENDS system_lib
+# DEPENDS system_lib
 )
 
 ###########
@@ -204,6 +204,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-catkin_install_python(PROGRAMS src/GasLeakageDetector.py
+catkin_install_python(PROGRAMS src/gas_leakage_detector.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

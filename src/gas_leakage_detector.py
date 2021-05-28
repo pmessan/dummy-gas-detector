@@ -1,6 +1,6 @@
 import rospy
 from std_msgs.msg import String
-from my_ros_package.msg import GasSensor
+from dummy_gas_detector.msg import GasSensor
 from random import random, seed, randint
 
 gases = ["LPG", "Methane", "Butane", "Nitrogen", "Ozone", "Tetrafluoromethane"]
